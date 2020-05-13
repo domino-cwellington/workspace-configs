@@ -8,4 +8,4 @@
  chmod 755 /opt/zeppelin/conf/zeppelin-env.sh 
  chown ubuntu:ubuntu /opt/zeppelin/conf/zeppelin-env.sh 
  sed -i '94d' /opt/zeppelin/conf/zeppelin-env.sh 
- chown -R ubuntu:ubuntu /opt/zeppelin
+ chown -R root:root /opt/zeppelin
