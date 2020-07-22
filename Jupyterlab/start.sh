@@ -17,4 +17,4 @@ c.NotebookApp.token = u''
 EOF
 
 COMMAND='jupyter-lab --config="$CONF_FILE" --no-browser --ip="0.0.0.0" 2>&1'
-eval ${COMMAND} 
+eval ${COMMAND}
