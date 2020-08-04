@@ -1,8 +1,8 @@
 #!/bin/bash
 
 cd /opt/
-wget http://h2o-release.s3.amazonaws.com/h2o/master/5101/h2o-3.31.0.5101.zip   
-unzip h2o-3.31.0.5101.zip
-mv /opt/h2o-3.31.0.5101 /opt/h2o
-rm /opt/h2o-3.31.0.5101.zip
+wget http://h2o-release.s3.amazonaws.com/h2o/master/5101/h2o-3.31.0.5144.zip   
+unzip h2o-3.31.0.5144.zip
+mv /opt/h2o-3.31.0.5144 /opt/h2o
+rm /opt/h2o-3.31.0.5144.zip
 chmod -R 755 /opt/h2o && chown -R ubuntu:ubuntu /opt/h2o
