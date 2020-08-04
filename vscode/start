@@ -6,7 +6,7 @@ FILE=${DOMINO_WORKING_DIR}/vscode-settings/User/settings.json
 #update a user setting file if it does exist
 if [ -f "$FILE" ]; then
 jq --argjson value false '. + {"extensions.autoUpdate": $value}' $FILE > temp-settings.json
-jq '{"python.pythonPath": "/opt/conda/bin/python"}' $FILE > temp-settings.json
+jq '. + {"python.pythonPath": "/opt/conda/bin/python"}' $FILE > temp-settings.json
 mv temp-settings.json $FILE
 rm -rf temp-settings.json
 fi
